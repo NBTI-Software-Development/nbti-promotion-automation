@@ -1,0 +1,46 @@
+nohup: ignoring input
+/home/ubuntu/nbti-promotion-automation/backend/nbti_api/venv/lib/python3.10/site-packages/flask_limiter/extension.py:333: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+ * Serving Flask app 'src/main.py'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.26.48:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+/home/ubuntu/nbti-promotion-automation/backend/nbti_api/venv/lib/python3.10/site-packages/flask_limiter/extension.py:333: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+ * Debugger is active!
+ * Debugger PIN: 138-215-485
+[2025-10-03 17:26:24,768] INFO in security: REQUEST: GET /api/health from 127.0.0.1
+2025-10-03 17:26:24,768 INFO src.main: REQUEST: GET /api/health from 127.0.0.1
+127.0.0.1 - - [03/Oct/2025 17:26:24] "GET /api/health HTTP/1.1" 200 -
+[2025-10-03 17:29:59,246] INFO in security: REQUEST: GET / from 102.90.103.18
+2025-10-03 17:29:59,246 INFO src.main: REQUEST: GET / from 102.90.103.18
+[2025-10-03 17:29:59,246] WARNING in security: ERROR_RESPONSE: 404 for GET /
+2025-10-03 17:29:59,246 WARNING src.main: ERROR_RESPONSE: 404 for GET /
+102.90.103.18 - - [03/Oct/2025 17:29:59] "[33mGET / HTTP/1.1[0m" 404 -
+[2025-10-03 17:29:59,649] INFO in security: REQUEST: GET /favicon.ico from 102.90.103.18
+2025-10-03 17:29:59,649 INFO src.main: REQUEST: GET /favicon.ico from 102.90.103.18
+[2025-10-03 17:29:59,649] WARNING in security: ERROR_RESPONSE: 404 for GET /favicon.ico
+2025-10-03 17:29:59,649 WARNING src.main: ERROR_RESPONSE: 404 for GET /favicon.ico
+102.90.103.18 - - [03/Oct/2025 17:29:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-10-03 21:11:39,802] INFO in security: REQUEST: HEAD / from 54.205.203.162
+2025-10-03 21:11:39,802 INFO src.main: REQUEST: HEAD / from 54.205.203.162
+[2025-10-03 21:11:39,802] WARNING in security: ERROR_RESPONSE: 404 for HEAD /
+2025-10-03 21:11:39,802 WARNING src.main: ERROR_RESPONSE: 404 for HEAD /
+54.205.203.162 - - [03/Oct/2025 21:11:39] "[33mHEAD / HTTP/1.1[0m" 404 -
+[2025-10-03 21:13:44,007] INFO in security: REQUEST: HEAD /api/login from 54.205.203.162
+2025-10-03 21:13:44,007 INFO src.main: REQUEST: HEAD /api/login from 54.205.203.162
+[2025-10-03 21:13:44,007] WARNING in security: ERROR_RESPONSE: 404 for HEAD /api/login
+2025-10-03 21:13:44,007 WARNING src.main: ERROR_RESPONSE: 404 for HEAD /api/login
+54.205.203.162 - - [03/Oct/2025 21:13:44] "[33mHEAD /api/login HTTP/1.1[0m" 404 -
+[2025-10-03 21:30:38,241] INFO in security: REQUEST: POST /api/auth/login from 54.205.203.162
+2025-10-03 21:30:38,241 INFO src.main: REQUEST: POST /api/auth/login from 54.205.203.162
+[2025-10-03 21:30:38,242] WARNING in security: ERROR_RESPONSE: 400 for POST /api/auth/login
+2025-10-03 21:30:38,242 WARNING src.main: ERROR_RESPONSE: 400 for POST /api/auth/login
+54.205.203.162 - - [03/Oct/2025 21:30:38] "[31m[1mPOST /api/auth/login HTTP/1.1[0m" 400 -
+[2025-10-03 21:32:53,373] INFO in security: REQUEST: POST /api/auth/login from 54.205.203.162
+2025-10-03 21:32:53,373 INFO src.main: REQUEST: POST /api/auth/login from 54.205.203.162
+54.205.203.162 - - [03/Oct/2025 21:32:53] "POST /api/auth/login HTTP/1.1" 200 -

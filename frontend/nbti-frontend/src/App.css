@@ -1,0 +1,32 @@
+/* App.css - App Component Styles */
+
+.app {
+  text-align: center;
+  padding: 2rem;
+}
+
+.app h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1f2937; /* Tailwind gray-800 */
+}
+
+.app p {
+  font-size: 1rem;
+  color: #4b5563; /* Tailwind gray-600 */
+  margin-top: 0.5rem;
+}
+
+.app button {
+  margin-top: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #2563eb; /* Tailwind blue-600 */
+  color: #fff;
+  border-radius: 0.375rem; /* rounded-md */
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.app button:hover {
+  background-color: #1d4ed8; /* Tailwind blue-700 */
+}

@@ -61,8 +61,11 @@ def create_app():
     jwt = JWTManager(app)
     
     # CORS configuration with environment-specific origins
-    cors_origins = os.getenv('CORS_ORIGINS', '*').split(',')
-    CORS(app, origins=cors_origins)
+    #cors_origins = os.getenv('CORS_ORIGINS', '*').split(',')
+    #CORS(app, origins=cors_origins)
+
+    # Temporary for testing in browser
+    CORS(app, origins="*")
     
     # Initialize security
     init_security(app)

@@ -1,0 +1,88 @@
+nohup: ignoring input
+
+> nbti-frontend@0.0.0 dev /home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend
+> vite --host 0.0.0.0 --port 5174
+
+Port 5174 is in use, trying another one...
+Port 5175 is in use, trying another one...
+
+  VITE v6.3.5  ready in 511 ms
+
+  ➜  Local:   http://localhost:5176/
+  ➜  Network: http://172.31.26.48:5177:4 ELIFECYCLE  Command failed.
+r: The service is no longer running
+  Plugin: vite:esbuild
+  File: /home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/src/main.jsx
+7:47:10 PM [vite] Internal server error: The service is no longer running
+  Plugin: vite:esbuild
+  File: /home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/src/main.jsx
+      at /home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/esbuild@0.25.4/node_modules/esbuild/lib/main.js:716:38
+      at sendRequest (/home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/esbuild@0.25.4/node_modules/esbuild/lib/main.js:597:36)
+      at start (/home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/esbuild@0.25.4/node_modules/esbuild/lib/main.js:715:9)
+      at Object.transform2 [as transform] (/home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/esbuild@0.25.4/node_modules/esbuild/lib/main.js:776:5)
+      at /home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/esbuild@0.25.4/node_modules/esbuild/lib/main.js:2038:77
+      at new Promise (<anonymous>)
+      at Object.transform (/home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/esbuild@0.25.4/node_modules/esbuild/lib/main.js:2038:36)
+      at transform (/home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/esbuild@0.25.4/node_modules/esbuild/lib/main.js:1873:62)
+      at transformWithEsbuild (file:///home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/vite@6.3.5_jiti@2.4.2_lightningcss@1.30.1/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:9137:26)
+      at TransformPluginContext.transform (file:///home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/vite@6.3.5_jiti@2.4.2_lightningcss@1.30.1/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:9199:30)
+      at EnvironmentPluginContainer.transform (file:///home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/vite@6.3.5_jiti@2.4.2_lightningcss@1.30.1/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42295:19)
+      at async loadAndTransform (file:///home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/vite@6.3.5_jiti@2.4.2_lightningcss@1.30.1/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:35735:27)
+      at async viteTransformMiddleware (file:///home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/vite@6.3.5_jiti@2.4.2_lightningcss@1.30.1/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:37250:24)
+7:56:16 PM [vite] Pre-transform error: The service is no longer running
+  Plugin: vite:esbuild
+  File: /home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/src/main.jsx
+7:56:16 PM [vite] Internal server error: The service is no longer running
+  Plugin: vite:esbuild
+  File: /home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/src/main.jsx
+      at /home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/esbuild@0.25.4/node_modules/esbuild/lib/main.js:716:38
+      at sendRequest (/home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/esbuild@0.25.4/node_modules/esbuild/lib/main.js:597:36)
+      at start (/home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/esbuild@0.25.4/node_modules/esbuild/lib/main.js:715:9)
+      at Object.transform2 [as transform] (/home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/esbuild@0.25.4/node_modules/esbuild/lib/main.js:776:5)
+      at /home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/esbuild@0.25.4/node_modules/esbuild/lib/main.js:2038:77
+      at new Promise (<anonymous>)
+      at Object.transform (/home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/esbuild@0.25.4/node_modules/esbuild/lib/main.js:2038:36)
+      at transform (/home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/esbuild@0.25.4/node_modules/esbuild/lib/main.js:1873:62)
+      at transformWithEsbuild (file:///home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/vite@6.3.5_jiti@2.4.2_lightningcss@1.30.1/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:9137:26)
+      at TransformPluginContext.transform (file:///home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/vite@6.3.5_jiti@2.4.2_lightningcss@1.30.1/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:9199:30)
+      at EnvironmentPluginContainer.transform (file:///home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/vite@6.3.5_jiti@2.4.2_lightningcss@1.30.1/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42295:19)
+      at async loadAndTransform (file:///home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/vite@6.3.5_jiti@2.4.2_lightningcss@1.30.1/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:35735:27)
+      at async viteTransformMiddleware (file:///home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/vite@6.3.5_jiti@2.4.2_lightningcss@1.30.1/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:37250:24)
+7:56:45 PM [vite] Pre-transform error: The service is no longer running
+  Plugin: vite:esbuild
+  File: /home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/src/main.jsx
+7:56:45 PM [vite] Internal server error: The service is no longer running
+  Plugin: vite:esbuild
+  File: /home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/src/main.jsx
+      at /home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/esbuild@0.25.4/node_modules/esbuild/lib/main.js:716:38
+      at sendRequest (/home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/esbuild@0.25.4/node_modules/esbuild/lib/main.js:597:36)
+      at start (/home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/esbuild@0.25.4/node_modules/esbuild/lib/main.js:715:9)
+      at Object.transform2 [as transform] (/home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/esbuild@0.25.4/node_modules/esbuild/lib/main.js:776:5)
+      at /home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/esbuild@0.25.4/node_modules/esbuild/lib/main.js:2038:77
+      at new Promise (<anonymous>)
+      at Object.transform (/home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/esbuild@0.25.4/node_modules/esbuild/lib/main.js:2038:36)
+      at transform (/home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/esbuild@0.25.4/node_modules/esbuild/lib/main.js:1873:62)
+      at transformWithEsbuild (file:///home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/vite@6.3.5_jiti@2.4.2_lightningcss@1.30.1/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:9137:26)
+      at TransformPluginContext.transform (file:///home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/vite@6.3.5_jiti@2.4.2_lightningcss@1.30.1/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:9199:30)
+      at EnvironmentPluginContainer.transform (file:///home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/vite@6.3.5_jiti@2.4.2_lightningcss@1.30.1/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42295:19)
+      at async loadAndTransform (file:///home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/vite@6.3.5_jiti@2.4.2_lightningcss@1.30.1/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:35735:27)
+      at async viteTransformMiddleware (file:///home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/vite@6.3.5_jiti@2.4.2_lightningcss@1.30.1/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:37250:24)
+7:58:35 PM [vite] Pre-transform error: The service is no longer running
+  Plugin: vite:esbuild
+  File: /home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/src/main.jsx
+7:58:36 PM [vite] Internal server error: The service is no longer running
+  Plugin: vite:esbuild
+  File: /home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/src/main.jsx
+      at /home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/esbuild@0.25.4/node_modules/esbuild/lib/main.js:716:38
+      at sendRequest (/home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/esbuild@0.25.4/node_modules/esbuild/lib/main.js:597:36)
+      at start (/home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/esbuild@0.25.4/node_modules/esbuild/lib/main.js:715:9)
+      at Object.transform2 [as transform] (/home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/esbuild@0.25.4/node_modules/esbuild/lib/main.js:776:5)
+      at /home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/esbuild@0.25.4/node_modules/esbuild/lib/main.js:2038:77
+      at new Promise (<anonymous>)
+      at Object.transform (/home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/esbuild@0.25.4/node_modules/esbuild/lib/main.js:2038:36)
+      at transform (/home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/esbuild@0.25.4/node_modules/esbuild/lib/main.js:1873:62)
+      at transformWithEsbuild (file:///home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/vite@6.3.5_jiti@2.4.2_lightningcss@1.30.1/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:9137:26)
+      at TransformPluginContext.transform (file:///home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/vite@6.3.5_jiti@2.4.2_lightningcss@1.30.1/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:9199:30)
+      at EnvironmentPluginContainer.transform (file:///home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/vite@6.3.5_jiti@2.4.2_lightningcss@1.30.1/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42295:19)
+      at async loadAndTransform (file:///home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/vite@6.3.5_jiti@2.4.2_lightningcss@1.30.1/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:35735:27)
+      at async viteTransformMiddleware (file:///home/ubuntu/nbti-promotion-automation/frontend/nbti-frontend/node_modules/.pnpm/vite@6.3.5_jiti@2.4.2_lightningcss@1.30.1/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:37250:24)
