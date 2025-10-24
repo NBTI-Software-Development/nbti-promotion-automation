@@ -85,6 +85,20 @@ class EMMExam(db.Model):
     is_active = db.Column(db.Boolean, default=True)
     start_time = db.Column(db.DateTime, nullable=True)
     end_time = db.Column(db.DateTime, nullable=True)
+    
+    # Promotional Exam Settings
+    is_promotional_exam = db.Column(db.Boolean, default=False)
+    target_conraiss_grade = db.Column(db.Integer, nullable=True)  # For promotional exams
+    
+    # Randomization Settings
+    randomize_questions = db.Column(db.Boolean, default=False)
+    randomize_options = db.Column(db.Boolean, default=False)
+    
+    # Exam Control
+    attempts_allowed = db.Column(db.Integer, default=1)
+    proctoring_enabled = db.Column(db.Boolean, default=False)
+    
+    # Metadata
     created_by = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
     updated_at = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
@@ -112,6 +126,12 @@ class EMMExam(db.Model):
             'is_active': self.is_active,
             'start_time': self.start_time.isoformat() if self.start_time else None,
             'end_time': self.end_time.isoformat() if self.end_time else None,
+            'is_promotional_exam': self.is_promotional_exam,
+            'target_conraiss_grade': self.target_conraiss_grade,
+            'randomize_questions': self.randomize_questions,
+            'randomize_options': self.randomize_options,
+            'attempts_allowed': self.attempts_allowed,
+            'proctoring_enabled': self.proctoring_enabled,
             'created_by': self.created_by,
             'created_at': self.created_at.isoformat() if self.created_at else None,
             'updated_at': self.updated_at.isoformat() if self.updated_at else None,
@@ -135,6 +155,14 @@ class EMMExamSubmission(db.Model):
     percentage = db.Column(db.Float, nullable=True)
     status = db.Column(db.String(50), default='In Progress')  # In Progress, Completed, Submitted
     submitted_at = db.Column(db.DateTime, nullable=True)
+    
+    # Tracking and Security
+    time_remaining = db.Column(db.Integer, nullable=True)  # Seconds remaining (for resume)
+    ip_address = db.Column(db.String(45), nullable=True)
+    browser_info = db.Column(db.Text, nullable=True)
+    attempt_number = db.Column(db.Integer, default=1)
+    is_flagged = db.Column(db.Boolean, default=False)  # Suspicious activity
+    flagged_reason = db.Column(db.Text, nullable=True)
     
     # Relationships
     answers = db.relationship('EMMSubmissionAnswer', backref='submission', lazy='dynamic', cascade='all, delete-orphan')
@@ -173,7 +201,11 @@ class EMMExamSubmission(db.Model):
             'score': self.score,
             'percentage': self.percentage,
             'status': self.status,
-            'submitted_at': self.submitted_at.isoformat() if self.submitted_at else None
+            'submitted_at': self.submitted_at.isoformat() if self.submitted_at else None,
+            'time_remaining': self.time_remaining,
+            'attempt_number': self.attempt_number,
+            'is_flagged': self.is_flagged,
+            'flagged_reason': self.flagged_reason
         }
         
         if include_answers:

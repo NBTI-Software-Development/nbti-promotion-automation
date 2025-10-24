@@ -1,0 +1,40 @@
+Clean Documentation Files:
+==========================
+
+Root Directory:
+- README.md (Clean, production-ready)
+- .gitignore (Comprehensive)
+- docker-compose.yml
+- .env.example
+
+Documentation (docs/):
+- SETUP_GUIDE.md (Complete installation guide)
+- TROUBLESHOOTING.md (Common issues and solutions)
+- GIT_WORKFLOW.md (Git workflow for existing repo)
+
+Specifications (keep for reference):
+- FINAL_COMPLETE_SPECIFICATIONS.md (70+ pages of requirements)
+- PHASE_1_IMPLEMENTATION_SUMMARY.md (Implementation details)
+
+Backend:
+- All src/ code
+- requirements.txt
+- seed_salary_scale.sql
+- .env.example
+- tests/
+
+Frontend:
+- All source code
+- package.json
+
+Files to Remove Before Git Push:
+================================
+- All test scripts (*.sh)
+- All troubleshooting docs (CORRECTED_*, FIX_*, MANUAL_*)
+- All summary files (*_SUMMARY.md except PHASE_1_IMPLEMENTATION_SUMMARY.md)
+- Test CSV files (sample_users.csv, etc.)
+- Archives (*.tar.gz)
+- Database files (*.db, *.sqlite)
+- Virtual environments (venv/)
+- Python cache (__pycache__/)
+- Node modules (node_modules/)

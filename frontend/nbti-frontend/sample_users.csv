@@ -1,0 +1,4 @@
+employee_id,first_name,last_name,email,department,position,rank,cadre,ippis_number,date_of_birth,state_of_origin,local_government_area,file_no,confirmation_date,qualifications,conraiss_grade,date_of_hire,phone_number,office_location,supervisor_employee_id
+EMP001,John,Doe,john.doe@nbti.local,IT,Developer,Senior,Technical,IP001,1990-01-15,Lagos,Ikeja,F001,2020-06-01,B.Sc Computer Science,7,2018-01-10,08012345678,Lagos Office,
+EMP002,Jane,Smith,jane.smith@nbti.local,HR,Manager,Principal,Administrative,IP002,1985-05-20,Abuja,Gwagwalada,F002,2019-03-15,M.Sc Human Resources,9,2017-02-01,08087654321,Abuja Office,
+EMP003,Mike,Johnson,mike.j@nbti.local,Finance,Accountant,Senior,Finance,IP003,1988-03-10,Kano,Municipal,F003,2020-01-20,B.Sc Accounting,8,2018-06-15,08011122233,Kano Office,EMP002

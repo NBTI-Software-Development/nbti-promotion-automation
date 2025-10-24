@@ -18,15 +18,25 @@ from flask_migrate import Migrate
 from src.security import init_security, SecurityMiddleware
 
 # Import all models to ensure they are registered
-from src.models.user import db, User, Role
-from src.models.pms import PMSEvaluation, PMSGoal
-from src.models.emm import EMMQuestion, EMMOption, EMMExam, EMMExamSubmission, EMMSubmissionAnswer
+from src.models import (
+    db, User, Role,
+    PMSEvaluation, PMSGoal, PMSCycle, Appeal, DevelopmentNeed,
+    EMMQuestion, EMMOption, EMMExam, EMMExamSubmission, EMMSubmissionAnswer,
+    SalaryScale, StepIncrementLog,
+    RRRVacancy, RRRRecommendation,
+    SystemConfiguration, AuditLog, Notification
+)
 
 # Import blueprints
 from src.routes.auth import auth_bp
 from src.routes.user import user_bp
 from src.routes.pms import pms_bp
 from src.routes.emm import emm_bp
+from src.routes.rrr import rrr_bp
+from src.routes.promotion import promotion_bp
+from src.routes.tasks import tasks_bp
+from src.routes.audit import audit_bp
+from src.routes.import_export import import_export_bp
 
 def create_app():
     app = Flask(__name__, static_folder=os.path.join(os.path.dirname(__file__), 'static'))
@@ -76,6 +86,11 @@ def create_app():
     app.register_blueprint(user_bp, url_prefix='/api')
     app.register_blueprint(pms_bp, url_prefix='/api/pms')
     app.register_blueprint(emm_bp, url_prefix='/api/emm')
+    app.register_blueprint(rrr_bp, url_prefix='/api/rrr')
+    app.register_blueprint(promotion_bp, url_prefix='/api/promotion')
+    app.register_blueprint(tasks_bp, url_prefix='/api/tasks')
+    app.register_blueprint(audit_bp, url_prefix='/api/audit')
+    app.register_blueprint(import_export_bp, url_prefix='/api/import-export')
     
     # Health check endpoint
     @app.route('/api/health', methods=['GET'])
@@ -149,7 +164,7 @@ def create_app():
             }
         }), 200
     
-    # Create tables
+    # Create tables and initialize default data
     with app.app_context():
         db.create_all()
         
